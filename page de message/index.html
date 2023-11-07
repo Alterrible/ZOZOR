@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<h1>votre message</h1>
+
+<form action="../cgi/reponse.py" method="get">
+    Veuillez saisir votre prénom :<br>
+        <input type="text" name="prenom" /> <br>
+    Veuillez saisir votre nom : <br>
+        <input type="text" name="nom" /> <br>
+    Veillez saisir un email valide : <br>
+        <input type="email" name="email"><br>
+    Votre message : <br>
+        <textarea name="message" rows="6" cols="40">Vous pouvez saisir ici un message.</textarea> <br>
+    <input type="submit" value="Envoyer" />
+</form>
+</body>
+</html>
